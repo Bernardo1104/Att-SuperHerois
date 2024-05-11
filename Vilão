@@ -1,0 +1,15 @@
+//Construa uma classe chamada Vilao, que descende da classe Personagem, com a seguinte estrutura:Atributos o tempoDePrisao: int Construtor o Vilao(String nome, String nomeVidaReal, int tempoDePrisao) Recebe os três parâmetros e repassa dois deles para a classe base, Personagem;
+import java.util.Scanner;
+    public class Vilao extends Personagem {
+    private int tempoDePrisao;
+    public Vilao(String nome, String nomeVidaReal, int tempoDePrisao) {
+        super(nome, nomeVidaReal);
+        this.tempoDePrisao = tempoDePrisao;}
+      
+  public int getTempoDePrisao(){
+    return tempoDePrisao;
+  }
+  public void setTempoDePrisao(int tempoDePrisao){
+    this.tempoDePrisao = tempoDePrisao;
+  }
+}
