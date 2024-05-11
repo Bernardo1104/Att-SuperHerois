@@ -1,0 +1,26 @@
+import java.util.Scanner;
+// Ensure that SuperHeroi class is imported
+public class Confronto {
+    public int executar(Superheroi superheroi, Vilao vilao) {
+        int poderSuperHeroi = superheroi.getPoderTotal();
+        // Assuming Vilao extends Personagem to inherit getPoderTotal() method
+        int poderVilao = vilao.getPoderTotal();
+        int v;
+        if (poderSuperHeroi > poderVilao) {
+            v = 1;
+        } else if (poderVilao > poderSuperHeroi) {
+            v = 2;
+        } else {
+            v = 0;
+        }
+        System.out.println("Resultado do Confronto:");
+        if (v == 1) {
+            System.out.println("Super-Herói ganhou!");
+        } else if (v == 2) {
+            System.out.println("Vilão ganhou!");
+        } else {
+            System.out.println("Empate!");
+        }
+        return v;
+    }
+}
