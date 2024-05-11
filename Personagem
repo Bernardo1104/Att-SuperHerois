@@ -1,0 +1,46 @@
+  import java.util.Scanner;
+  public class Personagem {
+      private String nome;
+      private String nomeVidareal;
+      private Superpoder[] poderes;
+      public Personagem() {
+          poderes = new Superpoder[4];
+      }
+    //Métodos públicos  o void adicionaSuperpoder(Superpoder sp) recebe um superpoder como parâmetro e coloca-o no vetor ‘poderes’. Um super-herói ou vilão pode ter, no máximo, 4 poderes.  o int getPoderTotal() retorna a soma de poderes do super-herói. O poder total é calculado percorrendo-se o vetor ‘poderes’ e somando-se a categoria de cada poder;
+        public void adicionaSuperpoder(Superpoder sp){
+            for(int i = 0; i < poderes.length; i++){
+                if(poderes[i] == null){
+                    poderes[i] = sp;
+                    break;
+                }
+            }
+        }
+      //metodos construtores;
+        public Personagem(String nome, String nomeVidareal, Superpoder[] poderes) {
+            super(nome, nomeVidareal, poderes);
+            this.nome = nome;
+            this.nomeVidaReal = nomeVidareal;
+            this.poderes = poderes;
+        }
+        
+      //metodo get;
+      public String getNome(){
+        return nome;
+      }
+      public String getNomeVidaReal(){
+        return nomeVidaReal;
+      }
+      public Superpoder[] getPoderes(){
+        return poderes;
+      }
+      //metodo set;
+      public void setNome(String nome){
+        this.nome = nome;
+      }
+      public void setNomeVidaReal(String nomeVidaReal){
+        this.nomeVidaReal = nomeVidaReal;
+      }
+      public void setPoderes(Superpoder[] poderes){
+        this.poderes = poderes;
+      }
+    }
