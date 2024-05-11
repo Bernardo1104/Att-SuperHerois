@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Main {
+  //crie um objeto para as classes Superheroi e Vilao;
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite o nome do Super-Herói: ");
+    String nome = sc.nextLine();
+    System.out.println("Digite o nome do Vilão: ");
+  }
+}
