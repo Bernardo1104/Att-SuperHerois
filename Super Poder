@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Superpoder{
+  private String nome;
+  private int categoria;
+
+//metodos construtoeres que recebe o nome do poder e a categoria e atribui ao objeto;
+public Superpoder(String nome, int categoria){
+  this.nome = nome;
+  this.categoria = categoria;
+  
+}
+//metodo get;
+public String getNome(){
+  return nome;
+}
+public int getCategoria(){
+  return categoria;
+}
+//metodo set;
+public void setNome(String nome){
+  this.nome = nome;
+}
+public void setCategoria(int categoria){
+  this.categoria = categoria;
+}
+}
