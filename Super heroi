@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Superheroi extends Personagem {
+  //metodo Construtor público  o SuperHeroi(String nome, String nomeVidaReal) Recebe os dois parâmetros e repassa para a classe base, Personagem;
+  public Superheroi(String nome, String noameVidaReal){
+    super(nome, nomeVidaReal);
+  }
+    //Redefinição do método da classe base o int getPoderTotal() Acrescenta um inflator de 10% aos poderes do personagem super-herói;
+    public int getPoderTotal(){
+      int soma = 0;
+      for(int i = 0; i < poderes.length; i++){
+        
+        if(poderes[i] != null){
+          soma += poderes[i].getCategoria();
+        }
+      }
+      return soma * 1.1;
+    }
+
+  }
